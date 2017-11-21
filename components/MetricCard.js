@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { getMetricMetaInfo } from '../utils/helpers';
 import { gray } from '../utils/helpers';
+import DateHeader from './DateHeader';
 
-export default function MetricCard ({ data, metrics }) {
+export default function MetricCard ({ date, metrics }) {
   return (
     <View>
       {date && <DateHeader date={date} />}
